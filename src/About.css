@@ -1,0 +1,167 @@
+@media only screen and (min-width: 600px) and (max-width: 1940px){
+#about{
+    padding: 0px 0;
+    color: #ffffff;
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-position-y: center;
+    background-position-x: 2rem;
+    background-repeat: no-repeat;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 31%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-bottom-left-radius: 200px;            /*Bild wird abgerundet in meinem Fall nicht nötig*/
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title1{
+    font-size: 50px;
+    margin-top: 5px;
+    margin-left: 180px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+.tab-titles{
+    color: #696969;
+    display: flex;
+    margin: 50px 0 40px;
+}
+.tab-links{
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #696969;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+}
+@media only screen and (min-width: 100px) and (max-width: 932px){
+    #about{
+        padding: 30px 0;
+        color: #ffffff;
+        width: 100%;
+        height: 70vh;
+        background-size: contain;
+        background-position-y: center;
+        background-position-x: 2rem;
+        background-repeat: no-repeat;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-col-1{
+        flex-basis: 0%;
+    }
+    .about-col-1 img{/*Bild nicht nötig*/
+        width: 0%;
+        border-bottom-left-radius: 0px;            /*Bild wird abgerundet in meinem Fall nicht nötig*/
+    }
+    .about-col-2{ /*auch nicht nötig*/
+        flex-basis: 10%;
+    }
+    .sub-title1{
+        font-size: 30px;
+        margin-top: -25px;
+        margin-left: 100px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100; /*???*/
+        color: #ffffff;
+    }
+    .p{
+        position: absolute;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-left: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    .tab-titles{
+        color: #696969;
+        display: flex;
+        margin: 120px 0 10px;
+    }
+    .tab-links{
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul li{
+        /*list-style: none;
+        margin-left: 100px;
+        margin: 50px 0;*/
+        position: relative;
+        font-size: 13px;
+        margin: 50px 0;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    .tab-contents ul li span{
+        color: #696969;
+        font-size: 16px;
+    }
+    .tab-contents{
+        font-size: 12px;
+        display: none;
+    }
+    .tab-contents.active-tab{
+        display: block;
+    }
+}

@@ -1,0 +1,148 @@
+body{
+    background: #000000;
+    color: #D3D3D3;
+}
+
+#header{
+    width: 100%;
+    height: 10vh;
+    background-size: contain;
+    background-position-y: 8rem;
+    background-position-x: right 50px;
+    background-repeat: no-repeat;
+    border-radius: 1000px; 
+    /*border-bottom: ;*/
+}
+
+#sidemenu{
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    height: auto;
+}
+
+.container{
+    padding: 20px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 5px;
+    left: 110px;
+    height: auto; /* Höhe wird automatisch angepasst */
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;                  /*Roter strich unsichtbar*/
+    height: 4px;
+    background: #696969;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;           /*Roter Strich erscheint*/
+}
+nav ul li a:hover::after{
+    width: 100%;                /*Roter Strich wird sichtbar gemacht nachdem man drauf geht*/
+}
+
+@media only screen and (min-width: 100px) and (max-width: 932px){
+    body{
+        background: #000000;
+        color: #D3D3D3;
+    }
+    
+    #header{
+        width: 100%;
+        height: 10vh;
+        background-size: contain;
+        background-position-y: 8rem;
+        background-position-x: right 50px;
+        background-repeat: no-repeat;
+        border-radius: 1000px; 
+        /*border-bottom: ;*/
+    }
+    .container{
+    padding: 20px 10%;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+}
+
+.logo{
+    flex-basis: 10%; /*Mit flexbox arbeiten damit die Elemente automatisch den platz nehmen der zur verfügung steht*/
+    width: 180px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    height: auto; /* Höhe wird automatisch angepasst */
+    z-index: 1;
+}
+
+nav ul{
+    display: flex; /* Wende Flexbox auf das ul-Element an */
+    padding: 0; /* Entfernt Standard-Padding */
+    margin: 0; /* Entfernt Standard-Margin */
+    list-style: none; /* Entfernt Aufzählungszeichen */
+    margin-left: 0px;
+    margin-left: -65px;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    width: 100%;
+    height: 10vh;
+
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;                  /*Roter strich unsichtbar*/
+    height: 4px;
+    background: #696969;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;           /*Roter Strich erscheint*/
+}
+nav ul li a:hover::after{
+    width: 100%;                /*Roter Strich wird sichtbar gemacht nachdem man drauf geht*/
+}
+}
