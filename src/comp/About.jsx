@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../About.css'; // Importiere die CSS-Datei für die Header-Komponente
-//import Image from '../images/IMG_3595.PNG';
+import Image from '../images/IMG_3595.PNG';
 
 export function About() {
     const [aktiv,setAktiv] = React.useState('skills');
@@ -14,7 +14,7 @@ export function About() {
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src='/IMG_3595.PNG'/>
+                <img src={Image}/>
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title1">About <u>Me</u></h1>
