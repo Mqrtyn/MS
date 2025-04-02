@@ -75,4 +75,3 @@ export function Experience() {
 }
 
 export default Experience;
-//Weiter machen, Header irgendwie anpassen, download anders machen so dass die pdf einfach angezeigt wird, contact machen und allgemein alles anpassen

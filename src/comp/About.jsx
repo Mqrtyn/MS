@@ -16,7 +16,7 @@ export function About() {
             <div class="about-col-1">
                 <img src={Image}/>
             </div>
-            <div class="about-col-2">
+                <div class="about-col-2">
                 <h1 class="sub-title1">About <u>Me</u></h1>
                 <p class="p">
                     Mein Name ist Martin Sigmundzik. Ich wurde am 07. November 2001 in Kędzierzyn-Koźle (Heydebreck), Polen, geboren. <br/> Im Jahr 2010 zog ich im Alter von neun Jahren gemeinsam mit meiner Mutter und meinen Geschwistern nach Deutschland. <br/>

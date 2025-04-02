@@ -65,40 +65,45 @@
     }
 }
 
-/*@media screen and (min-width: 880px) and (max-width: 1920px){
+@media screen and (max-width: 390px) and (max-height: 844px) and (-webkit-min-device-pixel-ratio: 3){
     html{
         scroll-behavior: smooth;
     }
 
-    body{
+    body::before{
+        /*content: "MacBook Retina erkannt";*/
         background: #000000;
         color: #D3D3D3;
     }
 
     #home{
-        width: 115rem;
-        height: 55rem;
+        width: 100vw;
+        height: 100vh;
         background-image: url(images/IMG_3596.PNG);
         background-size: contain;
-        background-position-x: 75rem;
-        background-position-y: 5rem;
+        background-position-x: 2rem;
+        background-position-y: 22rem;
         background-repeat: no-repeat;
-        border-bottom-right-radius: 30rem; 
+        border-bottom-right-radius: 20rem;
+        border-bottom-left-radius: 27rem;
     }
 
     .container{
-        padding: 20px 10%;
+        padding: 20px 2%;
     }
 
-    .header-text{                   /*text größe etc
-        margin-top: 13%;
-        font-size: 30px;
+    .header-text{                   /*text größe etc*/
+        padding-left: 60px;
+        margin-top: 30%;
+        font-size: 20px;
+        text-align: center;
     }
     .header-text h1{
-        font-size: 50px;
+        font-size: 25px;
         margin-top: 0%;
+        text-align: center;
     }
     .header-text h1 span{
         color: #696969;
     }
-}*/
+}
