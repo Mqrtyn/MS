@@ -6,19 +6,32 @@ import Image2 from '../images/software-developer.jpg';
 import Image3 from '../images/sourceCode.jpg';
 import Image4 from '../images/security.jpg';
 import Image5 from '../images/binary-3725324_1920.jpg';
-import Image6 from '../images/Mqrtyn_1Portfolio.pdf';
+import Image6 from '../images/Mqrtyn_2Portfolio_Prog12.pdf';
 import Image7 from '../images/Mqrtyn_2Portfolio_Algo:VS:DB.pdf';
-import Image8 from '../images/Mqrtyn_2Portfolio_SE.pdf';
+import Image8 from '../images/Mqrtyn_2Portfolio_SE_DS.pdf';
 import Image9 from '../images/Mqrtyn_2Portfolio_HCI:MD:WP.pdf';
-import Image10 from '../images/Mqrtyn_2Portfolio_WE12.pdf';
-import Image11 from '../images/CV.pdf';
+import Image10 from '../images/Mqrtyn_2Portfolio_WEB1:2:Py.pdf';
+import Image11 from '../images/Mqrtyn_Projekt_BA.pdf';
+import {motion} from 'framer-motion';
 
+const text = "Meine Erfahrung im Studium";
 
 export function Experience() {
   return (
     <div id="experience" class="hidden">
     <div class="container">
-        <h1 class="sub-title">Meine <u>Erfahrung</u> im Studium</h1>
+            <h1 className="tx">
+                  {text.split("").map((char, index) => (
+                  <motion.span
+                  key={index}
+                  initial={{color:"white"}}
+                  animate={{color: "#696969", }}
+                  transition={{duration: 0.2, repeat: Infinity, repeatType: "loop", delay: 1 + index * 0.1}}
+                    >
+                    {char}
+                  </motion.span>
+                ))}
+            </h1>
         <div class="erfahrung2-list">
             <div class="erf">
                 <img src={Image}/>
